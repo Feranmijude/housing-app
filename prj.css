@@ -1,0 +1,384 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.house {
+    background-image: url('./background-img4.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    height: 90vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00FF00; /* Neon green */
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00FF00;
+}
+
+.hero {
+    margin-top: 100px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+button {
+    background-color: #0c0f1c;
+    color: white;
+    font-size: 20px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #009900;
+}
+/* Our Homes Section */
+.our-homes {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.our-homes h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.homes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 0 50px;
+}
+
+.homes-grid img {
+    width: 70%;
+    border-radius: 10px;
+    height: 30vh;
+    margin-left: 65px;
+}
+
+/* Our Services Section */
+.our-services {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.our-services h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 50px;
+}
+
+.service-card {
+    background: white;
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-card i {
+    font-size: 40px;
+    /* color: #00FF00; */
+    margin-bottom: 15px;
+    color: black;
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.service-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+footer {
+    
+    padding: 40px 0;
+    color: white;
+    text-align: left; 
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.social-media {
+    /* text-align: center; */
+    margin-bottom: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    justify-content: space-between;
+    height: 5px;
+}
+.social-media p{
+    font-size: 15px;
+}
+
+
+.social-icons {
+    margin-top: 10px;
+    justify-content: right;
+    margin-left: 500px;
+    
+    
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: black;
+    font-size: 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #00FF00; /* Neon green for hover effect */
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    /* margin-top: 20px; */
+    background-color: #202020;
+    /* font-size: 10px; */
+}
+
+.footer-links h4 {
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    /* padding-left: -20px; */
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+    text-align: left;
+}
+
+.footer-links ul li a:hover {
+    color: #00FF00;
+}
+
+.contact ul li {
+    margin-bottom: 10px;
+}
+
+.contact ul li i {
+    margin-right: 10px;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links div {
+        margin-bottom: 20px;
+    }
+
+    .social-icons a {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-icons a {
+        font-size: 18px;
+    }
+
+    .footer-links ul li {
+        font-size: 14px;
+    }
+
+    .contact ul li {
+        font-size: 14px;
+    }
+}
+
+
+/* Media Queries */
+
+/* For tablets and below (768px) */
+@media (max-width: 768px) {
+    .homes-grid, .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .our-homes, .our-services {
+        padding: 30px 20px;
+    }
+
+    .service-card {
+        padding: 20px 15px;
+    }
+
+    .service-card i {
+        font-size: 35px;
+    }
+
+    .service-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .service-card p {
+        font-size: 0.85rem;
+    }
+}
+
+/* For mobile phones and below (480px) */
+@media (max-width: 480px) {
+    .homes-grid, .services-grid {
+        grid-template-columns: 1fr;
+        /* margin-left: -50px;
+        margin-right: 50px; */
+    }
+
+    .homes-grid img, .service-card {
+        width: 100%;
+    }
+
+    .our-homes h2, .our-services h2 {
+        font-size: 2rem;
+    }
+
+    .service-card i {
+        font-size: 30px;
+    }
+
+    .service-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .service-card p {
+        font-size: 0.8rem;
+    }
+    .homes-grid img{
+        margin-left: 10px;
+        width: 100%;
+    }
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    button {
+        padding: 10px 30px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 25px;
+    }
+}
